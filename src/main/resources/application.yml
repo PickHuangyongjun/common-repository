@@ -1,6 +1,13 @@
 spring:
   application:
     name: jun-ai-agent
+  ai:
+    dashscope:
+      api-key: sk-138612f0e0bc4c6698795790b6f485df
+      chat:
+        options:
+          model: qwen-flash
+          incremental-output: false
 server:
   port: 8123
   servlet:
@@ -22,3 +29,4 @@ knife4j:
   enable: true
   setting:
     language: zh_cn
+
